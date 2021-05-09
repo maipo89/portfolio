@@ -1,0 +1,938 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+.left-section h1 {
+    text-transform: uppercase;
+    font-weight: 00;
+    font-size: 22px;
+    margin: 20px 0 5px 0;
+}
+
+.subtitle {
+   display: flex;
+   flex-direction: column;
+   text-align: none;
+   border: 1px solid black;
+   align-items: left;
+}
+
+.left-section h2 {
+    text-transform: uppercase;
+    font-weight: 300;
+    font-size: 16px;
+    margin: 0 0 66px;
+    letter-spacing: 2.8px;
+}
+
+.left-section {
+    background-color: rgba(145,13,13,0.8);
+    width: 335px;
+    padding: 0;
+    height: 100%;
+    margin: 0;
+    color: white;
+    padding: 28.5px;
+    text-align: center;
+    position: fixed;
+    z-index: 3;
+}
+
+.left-section ul {
+    text-transform: uppercase;
+    text-align: left;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.left-section ul a {
+    color: white;
+}
+
+.left-section ul a li, .menu-section ul a li {
+    font-weight: 300;
+    font-size: 15px;
+    opacity: 70%;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.left-section ul a li:hover, .menu-section ul a li:hover {
+    opacity: 100%;
+}
+
+.left-section ul li i {
+    margin-left: 10px;
+    animation: MoveArrow 0.8s infinite;
+}
+
+@keyframes MoveArrow {
+    from {margin-left: 0px; opacity: 0%}
+    to {margin-left: 10px; opacity: 100%;}
+}
+
+.profile-image {
+    width: 150px;
+}
+
+.left-section .get-in-touch {
+    margin: 66px 0 25px 0;
+    font-size: 12px;
+    cursor: auto;
+}
+
+.get-in-touch {
+    opacity: 70%;
+}
+
+.contact-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.contact {
+    margin-right: 20px;
+    font-size: 24px;
+    opacity: 70%;
+    cursor: pointer;
+}
+
+.contact:hover {
+    opacity: 100%;
+}
+
+.introduction {
+    background-position: center center;
+    background-size: cover;
+    position: fixed;
+    z-index: 0;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.introduction h1, .introduction h2 {
+    position: relative;
+    left: 580px;
+    color: white;
+    text-shadow: 2px 2px rgb(95, 92, 92);
+    margin: 0;
+}
+
+.introduction h1 {
+    top: 185px;
+    font-size: 50px;
+}
+
+.introduction h2 {
+    top: 195px;
+    font-size: 30px;
+    width: 500px;
+    font-weight: 400;
+    line-height: 45px;
+}
+
+.introduction button {
+    padding: 15px 30px;
+    border: 2px solid white;
+    background-color: rgba(145, 145, 145, 0.4);
+    text-shadow: 2px 2px rgb(46, 45, 45);
+    font-size: 20px;
+    text-transform: uppercase;
+    position: relative;
+    left: 580px;
+    top: 270px;
+    display: block;
+    color: white;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+.introduction button:hover {
+    -webkit-transition: all 0.6s;
+    -moz-transition: all 0.6s;
+    transition: all 0.6s;
+    background-color: rgba(182, 28, 28, 0.4);
+}
+
+.click-here {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    left: 350px;
+    top: 70px;
+    width: 90px;
+    cursor: pointer;
+}
+
+.click-here p, .click-here i {
+    transition: ease-in 0.2s;
+    animation: infinite alternate 0.8s animation-click
+}
+
+@keyframes animation-click {
+    from {
+        opacity: 100%;
+    }
+
+    to {
+        opacity: 20%;
+    }
+}
+
+@keyframes move-section {
+    from {
+        left: 0
+    }
+
+    to {
+        left: 700px;
+    }
+}
+
+.bio  {
+    height: 100%;
+    position: fixed;
+    top: -700px;
+    width: 700px;
+    background-color: white;
+    display: block;
+    transition: "all 1s";
+    z-index: 1;
+    padding: 40px;
+}
+
+.title-bio  {
+    display: flex;
+    align-items: center;
+    color: #BB1E1E;
+    margin-bottom: 30px;
+    font-size: 25px;
+}
+
+.title-bio > i {
+    margin-right: 14px;
+}
+
+.title-bio > h1 {
+    margin: 0;
+    font-size: 25px;
+}
+
+.bio > span > p {
+    text-align: justify;
+    line-height: 22px;
+    font-weight: 300;
+}
+
+.red-word {
+    color: #BB1E1E;
+    font-weight: 600;
+}
+
+.black-word {
+    color: black;
+    font-weight: 600;
+}
+
+.bio > span > hr {
+    margin: 40px 0 30px 0;
+}
+
+.logos {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style: none;
+    cursor: pointer;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    background-color: rgb(240, 240, 240);
+}
+
+.logos li {
+    padding: 10px;
+    overflow: hidden;
+}
+
+.logos li:first-child {
+    padding: 20px 10px 20px 0;
+}
+
+.logos li img {
+    width: 55px;
+    transition: transform .5s ease;
+}
+
+.logos li img:hover {
+    -webkit-transform: scale(1.3); /* Chrome, Opera 15+, Safari 3.1+ */
+    -ms-transform: scale(1.3); /* IE 9 */
+    transform: scale(1.3); /* Firefox 16+, IE 10+, Opera */
+}
+
+.menu-bar {
+    display: none;
+}
+
+.portfolio {
+    position: fixed;
+    left: 335px;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 3;
+    background-color: white;
+    padding: 40px;
+    overflow: scroll;
+}
+
+.portfolio ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.portfolio ul .project {
+    display: flex;
+}
+
+.portfolio h1, .contact-section h1 {
+    font-size: 40px;
+    text-transform: uppercase;
+    font-weight: 400;
+    color: #555;
+}
+
+.work-section h2 {
+    font-size: 30px;
+    font-weight: 400;
+    color: #555;
+
+}
+
+.work-section h3 {
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+
+.work-section h4 {
+    font-size: 20px;
+}
+
+.image-london {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
+    background-position: center center;
+    background-size: cover;
+}
+
+.box {
+    width: 7px;
+    height: 7px;
+    background-color: rgba(145,13,13,1);
+    position: absolute;
+    top: 35px;
+    right: 0;
+    z-index: 4;
+}
+
+.time-section {
+    position: absolute;
+    padding: 30px 45px 1010px;
+}
+
+.time-section p {
+    margin: 0;
+    font-style: italic;
+    color: gray;
+}
+
+.work-section {
+    margin-left: 160px;
+}
+
+.work-section p {
+    margin: 0;
+}
+
+.portfolio .text-subtitle {
+    height: 40px;
+    margin-bottom: 40px;
+    font-size: 18px;
+    font-weight: 300;
+}
+
+.time-section hr {
+    position: absolute;
+    transform: rotate(180°);
+    height: 1050px;
+    top: 35px;
+    right: 2px;
+}
+
+.images-portfolio-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+}
+
+.images-portfolio {
+    width: 100%;
+    height: auto;
+}
+
+.version {
+    width: 45%;
+    list-style: none;
+    margin: 0;
+}
+
+.technologies {
+    display: flex;
+    width: 370px;
+    margin: 0 0 50px 0;
+    padding: 0;
+    justify-content: space-between;
+    color: white;
+}
+
+.tech-opt {
+    padding: 10px 20px;
+    background-color: rgb(206 70 70);
+    margin-right: 10px;
+    list-style: none;
+    font-size: 14px;
+    margin: 0;
+}
+
+.work-section button {
+    margin: 40px 0;
+}
+
+.work-section a p {
+    padding: 10px 20px;
+    background-color: rgba(145,13,13,1);
+    color: white;
+    text-transform: uppercase;
+    margin: 50px 0;
+    width: 190px;
+}
+
+.work-section a p:hover {
+    text-decoration: underline;
+}
+
+.work-section h5 {
+    text-transform: uppercase;
+    font-size: 15px;
+    color: #555;
+}
+
+.work-section hr {
+    margin-top: 40px;
+}
+
+.divide-work {
+    width: 70%;
+}
+
+.contact-section {
+    left: 335px;
+    background-color: white;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 3;
+    padding: 40px;
+}
+
+.email, .email div {
+    display: flex;
+}
+
+.email div {
+    color: rgba(145,13,13,1);
+}
+
+.email {
+    justify-content: space-between;
+    width: 350px;
+}
+
+.email i {
+    font-size: 20px;
+    margin: 13px 10px 0 0;
+}
+
+.gray-section {
+    background-color: #efefef;
+    bottom: 0;
+    left: 335px;
+    right: 0;
+    top: 400px;
+    z-index: 4;
+    position: fixed;
+}
+
+.background-gray-cv {
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #b8b8b8;
+    position: absolute;
+    height: 2850px;
+    z-index: 1;
+}
+
+.background-cv {
+    background-color: white;
+    top: 100px;
+    bottom: 100px;
+    left: 100px;
+    right: 100px;
+    position: absolute;
+    z-index: 2;
+    height: 2650px;
+    padding: 40px;
+}
+
+.header-cv div {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.header-cv div h3 {
+    margin: 0;
+    width: 300px;
+    font-weight: 300;
+    font-size: 18px;
+    color: #4c4c4c;
+}
+
+.header-cv div ul {
+    margin: 0;
+    width: 300px;
+    list-style: none;
+    text-align: right;
+}
+
+.header-cv div ul {
+    margin: 0;
+    width: 300px;
+    list-style: none;
+    text-align: right;
+}
+
+.header-cv div ul li {
+    margin-bottom: 10px;
+    color: rgb(224 48 48);
+}
+
+.header-cv h1 {
+    margin: 0;
+    text-transform: uppercase;
+    font-weight: 500;
+    color: rgb(224 48 48);
+}
+
+.header-cv h2 {
+    margin: 0;
+    font-weight: 300;
+    color: #4c4c4c;
+    font-size: 23px;
+    letter-spacing: 1px;
+}
+
+.skills h3 {
+    font-size: 20px;
+    color: #BB1E1E;
+    text-transform: uppercase;
+    margin-top: 40px;
+}
+
+.skills h4 {
+    font-size: 18px;
+    color: #4c4c4c;
+    font-weight: 300;
+}
+
+.skills ul li h5 {
+    font-size: 16px;
+    font-weight: 500;
+    color: black;
+    text-transform: uppercase;
+}
+
+.graphic-design {
+    display: flex;
+    width: 600px;
+    justify-content: space-between;
+}
+
+.experience h3 {
+    margin: 60px 0 30px 0;
+    text-transform: uppercase;
+    color: #BB1E1E;
+}
+
+.element-position, .rendering-position {
+    display: flex;
+    justify-content: space-between;
+    width: 450px;
+    flex-wrap: wrap;
+}
+
+.element {
+    background-color: #efefef;
+    padding: 10px 20px;
+    display: flex;
+    width: 130px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0 10px 0;
+}
+
+.element p {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.rendering-position {
+   width: 290px;
+}
+
+.experience h4 {
+    margin-top: 40px;
+}
+
+.education h3 {
+    margin: 60px 0 30px 0;
+    color: #BB1E1E;
+    text-transform: uppercase;
+}
+
+.education h4 {
+    margin-top: 20px;
+}
+
+.education strong {
+    color:#BB1E1E;
+    font-style: italic;
+    font-weight: 300;
+}
+
+@media only screen and (max-width: 1152px) {
+    
+    .introduction button, .introduction h1, .introduction h2 {
+       left: 500px;
+    }
+
+    .click-here {
+        left: 280px;
+    }
+
+    .click-here p {
+        transform: rotate(90deg);
+    }
+    
+    .click-here i {
+        display: none;
+    }
+
+    .left-section {
+       width: 300px;
+       padding: 28.5px 10px 28.5px 10px;
+    }
+
+    .left-section ul, .contact-container {
+        margin-left: 20px;
+    }
+
+    .portfolio {
+        left: 300px;
+    }
+
+    .version {
+        width: 80%;
+    }
+
+    .portfolio h1 {
+        font-size: 34px;
+    }
+
+    .work-section h3 {
+        font-size: 17px;
+    }
+
+    .work-section h2 {
+        font-size: 26px;
+    }
+
+    .portfolio .text-subtitle {
+        font-size: 17px;
+        margin-bottom: 20px;
+    }
+
+    .work-section h3 {
+        margin-bottom: 15px;
+    }
+
+    .work-section h4 {
+        font-size: 18px;
+    }
+    
+    .time-section hr {
+        height: 2000px;
+    }
+
+    .contact-section, .gray-section {
+        left: 300px;
+    }
+}
+
+@media only screen and (max-width: 1035px) {
+    .click-here {
+        left: 250px;
+    }
+
+    .introduction button, .introduction h1, .introduction h2 {
+        left: 450px;
+     }
+}
+
+@media only screen and (max-width: 1000px) {
+    .menu-bar {
+        height: 44px;
+        width: 100%;
+        background-color: rgba(145,13,13,0.8);
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        z-index: 4;
+        color: white;
+        display: block;
+    }
+
+    .social-bar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 30px 10px 30px;
+    }
+
+    .contact-container  {
+        margin-left: 0;
+        font-size: 20px;
+    }
+
+    .menu-bar i {
+        font-size: 20px;
+        opacity: 70%;
+        cursor: pointer;
+    }
+
+    .menu-bar i:hover {
+        opacity: 100%;
+    }
+
+    .left-section {
+        display: none;
+    }
+
+    .introduction h1, .introduction h2, .introduction button {
+        position: static;
+        margin-left: 30px;
+    }
+
+    .introduction h2 {
+        margin-bottom: 40px;
+        font-size: 30px;
+    }
+
+    .introduction h1 {
+        margin: 130px 0 10px 30px;
+        font-size: 40px;
+    }
+
+    .introduction button {
+        padding: 13px 26px;
+        font-size: 18px;
+    }
+
+    .menu-bar hr, .menu-bar ul{
+        margin: 0;
+        padding: 0;
+        display: none;
+        opacity: 70%;
+    }
+
+    .menu-bar hr {
+        opacity: 70%;
+        width: 100%;
+        text-align: center;
+    }
+
+    .menu-section {
+        padding: 30px;
+        display: none;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 30px;
+        opacity: 0;
+    }
+
+    .menu-section ul {
+        width: 130px;
+        text-align: right;
+        display: block;
+        list-style: none;
+        cursor: pointer;
+        text-transform: uppercase;
+    }
+
+    .menu-section ul a li {
+        color: white;
+        padding: 0;
+        display: block;
+    }
+
+    .menu-section a img {
+        width: 100px;
+    }
+
+    .bio  {
+        position: fixed;
+        top: 0px;
+        left: 0px;
+        width: 500px;
+        padding: 40px;
+        background-color: white;
+        transition: "all 1s";
+        z-index: 4;
+        margin: 0;
+        overflow: scroll;
+        display: none;
+    }
+
+    .logos  {
+        justify-content: space-around;
+        width: 90%;
+        flex-wrap: wrap;
+    }
+
+    .bio > span > p {
+        font-size: 15px;
+        line-height: 25px;
+        margin-bottom: 25px;
+    }
+
+    .title-bio {
+        font-size: 20px;
+    }
+
+    .title-bio h1 {
+        font-size: 22px;
+    }
+
+    .opacity-black {
+        background-color: black;
+        opacity: 40%;
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        z-index: 3;
+        width: 100%;
+        height: 100%;
+        display: none;
+    }
+
+    .close-icon {
+        position: absolute;
+        z-index: 5;
+        top: 30px;
+        left: 457px;
+        font-size: 20px;
+        color: rgb(148, 148, 148);
+        cursor: pointer;
+        display: none;
+    }
+
+    .close-icon:hover {
+        color: black;
+    }
+
+    .portfolio {
+        left: 0px;
+        padding: 30px;
+        margin-top: 40px;
+    }
+
+    .time-section hr {
+        height: 2500px;
+    }
+
+    .time-section {
+        padding: 30px 40px 1010px 20px;
+    }
+
+    .work-section {
+        margin-left: 140px;
+    }
+
+    .menu-section ul li:last-child {
+        font-weight: 300;
+        font-size: 15px;
+        opacity: 70%;
+    }
+
+    .contact-section {
+        margin-top: 20px;
+    }
+
+    .contact-section {
+        left: 0px;
+        padding: 30px;
+    }
+
+    .gray-section {
+        display: none;
+    } 
+
+    .background-cv {
+        top: 0px;
+        bottom: 0px;
+        left: 0px;
+        right: 0px
+    }
+
+    .background-gray-cv {
+        height: 2650px;
+    }
+
+}
