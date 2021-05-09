@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.js": "/https//maipo89.github.io/portfolio/static/js/main.4a218cea.chunk.js",
-    "main.js.map": "/https//maipo89.github.io/portfolio/static/js/main.4a218cea.chunk.js.map",
+    "main.js": "/https//maipo89.github.io/portfolio/static/js/main.abe9a33c.chunk.js",
+    "main.js.map": "/https//maipo89.github.io/portfolio/static/js/main.abe9a33c.chunk.js.map",
     "runtime-main.js": "/https//maipo89.github.io/portfolio/static/js/runtime-main.bde37404.js",
     "runtime-main.js.map": "/https//maipo89.github.io/portfolio/static/js/runtime-main.bde37404.js.map",
-    "static/js/2.94b15d75.chunk.js": "/https//maipo89.github.io/portfolio/static/js/2.94b15d75.chunk.js",
-    "static/js/2.94b15d75.chunk.js.map": "/https//maipo89.github.io/portfolio/static/js/2.94b15d75.chunk.js.map",
+    "static/js/2.e8b32b3c.chunk.js": "/https//maipo89.github.io/portfolio/static/js/2.e8b32b3c.chunk.js",
+    "static/js/2.e8b32b3c.chunk.js.map": "/https//maipo89.github.io/portfolio/static/js/2.e8b32b3c.chunk.js.map",
     "index.html": "/https//maipo89.github.io/portfolio/index.html",
-    "static/js/2.94b15d75.chunk.js.LICENSE.txt": "/https//maipo89.github.io/portfolio/static/js/2.94b15d75.chunk.js.LICENSE.txt",
+    "static/js/2.e8b32b3c.chunk.js.LICENSE.txt": "/https//maipo89.github.io/portfolio/static/js/2.e8b32b3c.chunk.js.LICENSE.txt",
     "static/media/Westminster.165b9a4d.jpg": "/https//maipo89.github.io/portfolio/static/media/Westminster.165b9a4d.jpg",
     "static/media/bootstrap-logo.14cff167.png": "/https//maipo89.github.io/portfolio/static/media/bootstrap-logo.14cff167.png",
     "static/media/css-logo.3b9cf4b1.png": "/https//maipo89.github.io/portfolio/static/media/css-logo.3b9cf4b1.png",
@@ -25,7 +25,7 @@
   },
   "entrypoints": [
     "static/js/runtime-main.bde37404.js",
-    "static/js/2.94b15d75.chunk.js",
-    "static/js/main.4a218cea.chunk.js"
+    "static/js/2.e8b32b3c.chunk.js",
+    "static/js/main.abe9a33c.chunk.js"
   ]
 }
