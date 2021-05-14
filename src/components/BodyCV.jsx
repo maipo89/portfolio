@@ -4,8 +4,8 @@ function BodyCV() {
     const frontEnd = ["HTML5" ,"CSS3" ,"Javascript" ,"jQuery" ,"Wordpress","Bootstrap" ,"React"]
     const backEnd = ["NodeJS", "Express", "MongoDB"]
     const versionControl = ["Git", "GitHub"]
-    const modelling = ["3DStudio Max", "Rhinoceros", "Autocad"]
-    const rendering = ["V-RAY", "Mental Ray"]
+    const modelling = ["3DSMax", "Rhinoceros", "Autocad"]
+    const rendering = ["V-RAY", "MentalRay"]
 
     return(
         <div className="skills">

@@ -19,10 +19,10 @@ return (
                     contact="marcobrunettivo@gmail.com"/>
             <Email name="LinkedIn"
                     icon={linkedInIcon}
-                    contact="marcobrunettivo@gmail.com"/>
+                    contact="linkedin.com/marco-brunetti"/>
             <Email name="Github"
                     icon={githubIcon}
-                    contact="marcobrunettivo@gmail.com"/>
+                    contact="https://github.com/maipo89"/>
         </div>
         <div className="gray-section"></div>
      </div>

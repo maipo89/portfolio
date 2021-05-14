@@ -6,7 +6,7 @@ function TimeSection(props) {
        <div className="time-section">
            <p>{props.year}</p>
            <div className="box"></div>
-           <hr />
+           <div className="line-gradient"></div>
        </div>
     )
 }

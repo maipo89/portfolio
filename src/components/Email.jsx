@@ -7,7 +7,7 @@ return (
             <p>{props.name}:</p>
             <div>
                 <i>{props.icon}</i>
-                <p>{props.contact}</p>
+                <a style={{textDecoration: "none"}} href={ props.name === "Email" ? `mailto:${"marcobrunettivo@gmail.com"}` : (props.name === "LinkedIn" ? "https://www.linkedin.com/in/marco-brunetti-147a6948/" : "https://github.com/maipo89")}><p>{props.contact}</p></a>
             </div>
          </div>
 )

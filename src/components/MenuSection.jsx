@@ -22,7 +22,7 @@ function MenuSection(props) {
                         <Link style={{ textDecoration: "none"}} to="/portfolio"><Option name="Portfolio" /></Link>
                         <Link style={{ textDecoration: "none"}} to="/contact"><Option name="Contact Me" /></Link>
                         <Link style={{ textDecoration: "none"}} to="/cv"><Option name="My CV" /></Link>
-                        <Option className="about-me" onClick= {props.onClick} name="About Me" />
+                        <Option onClick= {props.onClick} name="About Me" />
                 </ul>
             </div>
         </div>
