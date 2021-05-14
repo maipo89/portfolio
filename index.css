@@ -33,7 +33,7 @@ body {
 
 .left-section {
     background-color: rgba(145,13,13,0.8);
-    width: 335px;
+    width: 500px;
     padding: 0;
     height: 100%;
     margin: 0;
@@ -123,7 +123,7 @@ body {
 
 .introduction h1, .introduction h2 {
     position: relative;
-    left: 580px;
+    left: 750px;
     color: white;
     text-shadow: 2px 2px rgb(95, 92, 92);
     margin: 0;
@@ -150,7 +150,7 @@ body {
     font-size: 20px;
     text-transform: uppercase;
     position: relative;
-    left: 580px;
+    left: 750px;
     top: 270px;
     display: block;
     color: white;
@@ -170,13 +170,10 @@ body {
     justify-content: space-between;
     align-items: center;
     position: absolute;
-    left: 350px;
+    left: 520px;
     top: 70px;
     width: 90px;
     cursor: pointer;
-}
-
-.click-here p, .click-here i {
     transition: ease-in 0.2s;
     animation: infinite alternate 0.8s animation-click
 }
@@ -211,6 +208,11 @@ body {
     transition: "all 1s";
     z-index: 1;
     padding: 40px;
+    overflow-y: scroll;
+}
+
+::-webkit-scrollbar {
+    display: none;
 }
 
 .title-bio  {
@@ -288,7 +290,7 @@ body {
 
 .portfolio {
     position: fixed;
-    left: 335px;
+    left: 500px;
     top: 0;
     right: 0;
     bottom: 0;
@@ -343,13 +345,13 @@ body {
 }
 
 .box {
-    width: 7px;
-    height: 7px;
+    width: 7.5px;
+    height: 7.5px;
     background-color: rgba(145,13,13,1);
     position: absolute;
     top: 35px;
     right: 0;
-    z-index: 4;
+    z-index: 5;
 }
 
 .time-section {
@@ -376,14 +378,6 @@ body {
     margin-bottom: 40px;
     font-size: 18px;
     font-weight: 300;
-}
-
-.time-section hr {
-    position: absolute;
-    transform: rotate(180°);
-    height: 1050px;
-    top: 35px;
-    right: 2px;
 }
 
 .images-portfolio-container {
@@ -455,7 +449,7 @@ body {
 }
 
 .contact-section {
-    left: 335px;
+    left: 500px;
     background-color: white;
     position: fixed;
     top: 0;
@@ -471,6 +465,25 @@ body {
 
 .email div {
     color: rgba(145,13,13,1);
+    width: 250px;
+}
+
+.email div a {
+    color: rgba(145,13,13,1);
+}
+
+.email div:hover {
+    text-decoration: underline;
+}
+
+.line-gradient {
+    position: absolute;
+    top: 35px;
+    z-index: 4;
+    background: linear-gradient(to top, transparent, rgb(156 154 154));
+    width: 2px;
+    height: 800px;
+    right: 2.6px;
 }
 
 .email {
@@ -486,7 +499,7 @@ body {
 .gray-section {
     background-color: #efefef;
     bottom: 0;
-    left: 335px;
+    left: 500px;
     right: 0;
     top: 400px;
     z-index: 4;
@@ -500,7 +513,7 @@ body {
     right: 0;
     background-color: #b8b8b8;
     position: absolute;
-    height: 2850px;
+    height: 2500px;
     z-index: 1;
 }
 
@@ -508,11 +521,11 @@ body {
     background-color: white;
     top: 100px;
     bottom: 100px;
-    left: 100px;
-    right: 100px;
+    left: 150px;
+    right: 150px;
     position: absolute;
     z-index: 2;
-    height: 2650px;
+    height: 2248px;
     padding: 40px;
 }
 
@@ -526,7 +539,7 @@ body {
     margin: 0;
     width: 300px;
     font-weight: 300;
-    font-size: 18px;
+    font-size: 16px;
     color: #4c4c4c;
 }
 
@@ -547,6 +560,12 @@ body {
 .header-cv div ul li {
     margin-bottom: 10px;
     color: rgb(224 48 48);
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.header-cv div ul li:hover {
+    text-decoration: underline;
 }
 
 .header-cv h1 {
@@ -554,34 +573,36 @@ body {
     text-transform: uppercase;
     font-weight: 500;
     color: rgb(224 48 48);
+    font-size: 25px;
 }
 
 .header-cv h2 {
     margin: 0;
     font-weight: 300;
     color: #4c4c4c;
-    font-size: 23px;
+    font-size: 18.5px;
     letter-spacing: 1px;
 }
 
 .skills h3 {
-    font-size: 20px;
+    font-size: 18px;
     color: #BB1E1E;
     text-transform: uppercase;
     margin-top: 40px;
 }
 
 .skills h4 {
-    font-size: 18px;
+    font-size: 17px;
     color: #4c4c4c;
     font-weight: 300;
 }
 
 .skills ul li h5 {
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 500;
     color: black;
     text-transform: uppercase;
+    margin: 15px;
 }
 
 .graphic-design {
@@ -591,23 +612,28 @@ body {
 }
 
 .experience h3 {
-    margin: 60px 0 30px 0;
+    margin: 40px 0 30px 0;
     text-transform: uppercase;
     color: #BB1E1E;
+    font-size: 18px;
+}
+
+.experience ul li p {
+    font-size: 14px;
 }
 
 .element-position, .rendering-position {
     display: flex;
     justify-content: space-between;
-    width: 450px;
+    width: 400px;
     flex-wrap: wrap;
 }
 
 .element {
-    background-color: #efefef;
-    padding: 10px 20px;
+    background-color: #cbc9c9;;
+    padding: 5px 24px;
     display: flex;
-    width: 130px;
+    width: 120px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -618,24 +644,42 @@ body {
     text-align: center;
     margin: 0;
     padding: 0;
+    font-size: 15px;
 }
 
 .rendering-position {
-   width: 290px;
+   width: 260px;
 }
 
 .experience h4 {
-    margin-top: 40px;
+    margin-top: 30px;
+    font-size: 15px;
+    text-decoration: overline;
+}
+
+.experience h5 {
+    font-size: 13px;
+}
+
+.line-section {
+    display: flex;
+    
 }
 
 .education h3 {
-    margin: 60px 0 30px 0;
+    font-size: 18px;
+    margin: 40px 0 30px 0;
     color: #BB1E1E;
     text-transform: uppercase;
 }
 
 .education h4 {
-    margin-top: 20px;
+    margin: 20px 0 10px 0;
+}
+
+.education ul li p {
+    margin-top: 0;
+    font-size: 14px;
 }
 
 .education strong {
@@ -644,14 +688,64 @@ body {
     font-weight: 300;
 }
 
-@media only screen and (max-width: 1152px) {
+.contact-container a {
+    color: white;
+}
+
+@media screen and (max-width: 1360px) {
+
+    .left-section {
+        width: 335px;
+    }
+
+    .introduction h1, .introduction h2 {
+        left: 580px;
+    }
+
+    .introduction button {
+        left: 580px;
+    }
+
+    .click-here {
+        left: 350px;
+    }
+
+    .contact-section, .gray-section, .portfolio {
+        left: 335px;
+    }
+
+}
+
+@media screen and (max-height: 600px) {
+    .left-section {
+        overflow-y: scroll;
+    }
+
+    ::-webkit-scrollbar {
+        display: none;
+    }
+
+    .click-here {
+        left: 280px;
+    }
+
+    .click-here p {
+        transform: rotate(90deg);
+    }
+    
+    .click-here i {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1152px) {
     
     .introduction button, .introduction h1, .introduction h2 {
        left: 500px;
     }
 
     .click-here {
-        left: 280px;
+        left: 250px;
     }
 
     .click-here p {
@@ -703,27 +797,21 @@ body {
     .work-section h4 {
         font-size: 18px;
     }
-    
-    .time-section hr {
-        height: 2000px;
-    }
 
     .contact-section, .gray-section {
         left: 300px;
     }
 }
 
-@media only screen and (max-width: 1035px) {
-    .click-here {
-        left: 250px;
-    }
+@media screen and (max-width: 1035px) {
 
     .introduction button, .introduction h1, .introduction h2 {
         left: 450px;
      }
+
 }
 
-@media only screen and (max-width: 1000px) {
+@media screen and (max-width: 1000px) {
     .menu-bar {
         height: 44px;
         width: 100%;
@@ -876,7 +964,7 @@ body {
         position: absolute;
         z-index: 5;
         top: 30px;
-        left: 457px;
+        left: 472px;
         font-size: 20px;
         color: rgb(148, 148, 148);
         cursor: pointer;
@@ -891,10 +979,6 @@ body {
         left: 0px;
         padding: 30px;
         margin-top: 40px;
-    }
-
-    .time-section hr {
-        height: 2500px;
     }
 
     .time-section {
@@ -932,7 +1016,370 @@ body {
     }
 
     .background-gray-cv {
-        height: 2650px;
+        height: 2226px;
     }
 
+}
+
+@media screen and (max-width: 670px) {
+    .background-cv {
+        padding: 20px;
+    }
+
+    .header-cv h1 {
+        font-size: 18px;
+        margin-top: 20px;
+    }
+
+    .header-cv h2 {
+        font-size: 12px;
+    }
+
+    .skills h3 {
+        font-size: 15px;
+        margin-top: 20px;
+    }
+
+    .skills h4 {
+        font-size: 14px;
+        margin: 10px 0 10px 0;
+    }
+
+    .skills ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    .skills ul li h5 {
+        margin: 10px 0 10px 0;
+        font-size: 14px;
+    }
+
+    .element p {
+        font-size: 13px;
+    }
+
+    .element {
+        padding: 5px 15px;
+        width: 80px;
+        margin: 7px 0 7px 0;
+    }
+
+    .element-position {
+        width: 50%;
+    }
+
+    .rendering-position {
+        width: 174px;
+    }
+
+    .graphic-design {
+        display: block;
+        width: 178px;
+    }
+
+    .graphic-design hr {
+        margin: 20px 0 20px 0;
+    }
+
+    .graphic-design li .element {
+        margin-top: 14px;
+    }
+
+    .experience h3, .education h3 {
+        margin: 25px 0 25px 0;
+        font-size: 15px;
+    }
+
+    .experience h4 {
+        font-size: 13px;
+        margin-top: 20px;
+    }
+
+    .experience h5 {
+        font-size: 11px;
+        margin: 8px 0 8px 0;
+    }
+
+    .experience ul li p {
+        font-size: 12px;
+        margin: 7px 0 7px 0;
+    }
+
+    .experience ul {
+        padding-left: 20px;
+    }
+
+    .education ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    .education h4 {
+        font-size: 12px;
+    }
+
+    .education ul li p {
+        font-size: 11px;
+    }
+
+    .background-gray-cv {
+        height: 1939px;
+    }
+
+    .background-cv {
+        height: 1939px;
+    }
+}
+
+@media screen and (max-width: 628px) and (min-width: 415px) {
+    .introduction h1 {
+        font-size: 30px;
+    }
+
+    .introduction h2 {
+        font-size: 25px;
+        width: 400px;
+    }
+
+    .introduction button {
+        padding: 12px 22px;
+        font-size: 16px;
+    }
+
+    .email {
+        display: block
+    }
+
+    .email p {
+        font-weight: 500;
+    }
+
+    .portfolio h1, .contact-section h1 {
+        font-size: 30px;
+        margin: 30px 0 30px 0;
+    }
+
+    .portfolio ul .project {
+        display: block;
+    }
+
+    .time-section {
+        padding: 0;
+        position: static;
+        display: block;
+        margin-top: 30px;
+    }
+
+    .time-section p {
+        color: #BB1E1E;
+    }
+
+    .work-section {
+        margin-left: 0;
+    }
+
+    .box, .line-gradient {
+        display: none;
+    }
+
+    .work-section h2 {
+        text-decoration: underline;
+        font-size: 24px;
+    }
+
+    .tech-opt {
+        padding: 6px 15px;
+        margin-right: 5px;
+        font-size: 12px;
+    }
+
+    .technologies {
+        display: flex;
+        width: 200px;
+    }
+
+    .portfolio .text-subtitle {
+        height: auto;
+        font-size: 16px;
+    }
+
+    .work-section h3 {
+        font-size: 16px;
+    }
+
+    .work-section h4 {
+        font-size: 17px;
+        text-align: center;
+    }
+
+    .version {
+        width: 100%;
+    }
+
+    .images-portfolio-container {
+        display: flex;
+        flex-wrap: none;
+        justify-content: center;
+    }
+
+    .work-section a p {
+        padding: 6px 14px;
+        font-size: 15px;
+        text-align: center;
+        margin: 35px 0;
+    }
+
+}
+
+@media screen and (max-width: 525px) {
+    .element-position {
+        width: 60%;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .introduction {
+        background-position: right bottom;
+    }
+
+    .introduction h1 {
+        font-size: 40px;
+    }
+
+    .introduction h2 {
+        font-size: 21px;
+        width: 320px;
+        margin-bottom: 60px;
+    }
+
+    .bio {
+        width: 320px;
+    }
+
+    .close-icon {
+        left: 290px;
+    }
+
+    
+    .email {
+        display: block
+    }
+
+    .email p {
+        font-weight: 500;
+    }
+
+    .portfolio h1, .contact-section h1 {
+        font-size: 30px;
+        margin: 30px 0 30px 0;
+    }
+
+    .portfolio ul .project {
+        display: block;
+    }
+
+    .portfolio .text-subtitle {
+        height: auto;
+        font-size: 16px;
+    }
+
+    .time-section {
+        padding: 0;
+        position: static;
+        display: block;
+        margin-top: 30px;    
+    }
+
+    .time-section p {
+        color: #BB1E1E;
+    }
+
+    .work-section {
+        margin-left: 0;
+    }
+
+    .box, .line-gradient {
+        display: none;
+    }
+
+    .work-section h2 {
+        text-decoration: underline;
+        font-size: 24px;
+    }
+
+    .technologies {
+        display: flex;
+        width: 200px;
+    }
+
+    .tech-opt {
+        padding: 6px 15px;
+        margin-right: 5px;
+        font-size: 12px;
+    }
+
+    .work-section h3 {
+        font-size: 16px;
+    }
+
+    .work-section h4 {
+        font-size: 17px;
+        text-align: center;
+    }
+
+    .version {
+        width: 100%;
+    }
+
+    .images-portfolio-container {
+        display: flex;
+        flex-wrap: none;
+        justify-content: center;
+    }
+    
+    .work-section a p {
+        padding: 6px 14px;
+        font-size: 15px;
+        text-align: center;
+        margin: 35px 0;
+    }
+
+    .header-cv div h3 {
+        width: 160px;
+        font-size: 12px;
+    }
+
+    .header-cv div ul li {
+        margin-bottom: 6px;
+        font-size: 11px;
+    }
+
+    .element-position {
+        width: 60%;
+    }
+
+    .background-cv, .background-gray-cv {
+        height: 1912px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+
+    .element-position {
+        width: 100%;
+    } 
+}
+
+@media screen and (max-width: 375px) {
+
+    .element-position {
+        width: 80%;
+    } 
+
+    .education ul li p {
+        margin-bottom: 20px;
+    }
 }
