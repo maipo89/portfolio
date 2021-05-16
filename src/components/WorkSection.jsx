@@ -9,7 +9,7 @@ function WorkSection(props) {
            <h3>{props.subtitle}</h3>
            <ul className="images-portfolio-container">
            {props.imgs.map((newImg, index) =>                
-               <li key={index} className="version">
+               <li key={index} className={ props.title === "Tutto Pepe front-end E-Commerce" ? "full-screen" : "version"}>
                   <h4>{newImg.title}</h4>
                   <img src={newImg.img} className="images-portfolio" alt="portfolio"></img>
                </li>)

@@ -331,6 +331,7 @@ body {
 
 .work-section h4 {
     font-size: 20px;
+    margin-bottom: 40px;
 }
 
 .image-london {
@@ -393,10 +394,14 @@ body {
     height: auto;
 }
 
-.version {
+.version, .full-screen {
     width: 45%;
     list-style: none;
     margin: 0;
+}
+
+.full-screen {
+    width: 100%;
 }
 
 .technologies {
