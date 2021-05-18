@@ -10,7 +10,7 @@ function MenuSection(props) {
     const hamburgerMenu = <FontAwesomeIcon icon={faBars} />
 
     return (
-        <div style={props.menuBar} className="menu-bar">
+        <div style={{...props.menuBar, ...props.opacity}} className="menu-bar">
             <div className="social-bar">
                 <Social />
                 <i onClick={props.clicked}>{hamburgerMenu}</i>

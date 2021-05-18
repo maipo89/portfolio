@@ -17,6 +17,7 @@ function MobileVersion() {
         const [moveText, setMoveText] = useState({})
         const [moveTextAbout, setMoveTextAbout] = useState({})
         const [showMobileBio, setShowMobileBio] = useState({})
+        const [opacitySection, setOpacitySection] = useState({});
 
         function showBio() {
                 setShowMobileBio({display: "block"})
@@ -34,6 +35,9 @@ function MobileVersion() {
                 setShowItem(clicked ? {display: "none"} : {display: "flex", opacity: "1", transition: "all 0.4s"})
                 setMoveText(clicked ? {marginTop: "130px"} : {marginTop: "250px"})
                 setMoveTextAbout(clicked ? {marginTop: "20px"} : {marginTop: "200px"})
+                setOpacitySection(clicked ?
+                        {backgroundColor: "rgba(145,13,13,0.8"} 
+                        : {backgroundColor: "rgba(145,13,13,1)"})
         }
 
 return (
@@ -43,6 +47,7 @@ return (
             menuBar= {menuBar}
             clicked = {() => {showSection()}} 
             onClick= {() => {showBio()}}
+            opacity= {opacitySection}
         />
         <div style={showMobileBio} className="opacity-black"></div>
         <Bio bio={showMobileBio}/>
