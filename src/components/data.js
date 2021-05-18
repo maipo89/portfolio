@@ -6,19 +6,6 @@ import tuttoPepeMobile from "../images/tutto-pepe-mobile.jpg"
 
 const dataPortfolio = [
     {
-    title: "Marco Brunetti Portfolio Website", 
-    subtitle: "This is my portfolio, an application built from scratch with React (using React-routing and Hooks). I did the UI design and the style using and deployed with Heroku",
-    imgs: [
-        {title: "Desktop Version", 
-         img: easyBank},
-        {title: "Mobile Version",
-         img: easyBankMobile}],
-    technologies: ["HTML", "CSS", "React", "React-Router"],
-    link: "https://www.marcobrunetti.com",
-    year: "2021",
-    id: 1
-    },
-    {
         title: "Easy-Bank landing page", 
         subtitle: "I coded this landing page from scratch using html and css and add some features with javascript and SVG.",
         imgs: [
@@ -27,9 +14,22 @@ const dataPortfolio = [
             {title: "Mobile Version",
              img: easyBankMobile}],
         technologies: ["HTML", "CSS", "JavaScript", "SVG"],
-        link: "",
+        link: "https://maipo89.github.io/easybank-landingpage/",
         year: "2021",
         id: 2
+    },
+    {
+        title: "Marco Brunetti Portfolio Website", 
+        subtitle: "This is my portfolio, an application built from scratch with React (using React-routing and Hooks). I did the UI design and the style using and deployed with Heroku",
+        imgs: [
+            {title: "Desktop Version", 
+             img: easyBank},
+            {title: "Mobile Version",
+             img: easyBankMobile}],
+        technologies: ["HTML", "CSS", "React", "React-Router"],
+        link: "https://www.marcobrunetti.com",
+        year: "2021",
+        id: 1
     },
     {
     title: "Tutto Pepe front-end E-Commerce", 
