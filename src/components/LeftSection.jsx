@@ -17,8 +17,10 @@ function LeftSection(props) {
         const timer = setTimeout(() => {
             setShowBio(clicked ?
                 {transition: "all ease-in 1s",
+                WebkitTransition: "all ease-in 1s",
                 top: "0px", opacity: "1"}
                : {transition: "all ease-in 0.5s",
+               WebkitTransition: "all ease-in 0.5s",
                top: "-700px", opacity: "0"}
             );
         }, 400);
@@ -32,10 +34,12 @@ function LeftSection(props) {
                          : {backgroundColor: "rgba(145,13,13,1)"})
         setLeftSection(clicked ?
                         {transition: "all 1s",
+                        WebkitTransition: "all 1s",
                                left: "0px",
                           animation: "move-section ease-in 1s", opacity: opacitySection,} 
                        : 
                        {transition: "all 1s",
+                       WebkitTransition: "all 1s",
                               left: "700px",
                          animation: "move-section ease-in 1s", opacity: opacitySection})
         setHideContent(clicked ? {display: "none"} : {display: "block"})
